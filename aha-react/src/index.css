@@ -1,6 +1,6 @@
 :root { --bg: #000; --fg: #fff; --muted: #b3b3b3; --panel: #0f0f10; --border: #1f1f22; }
 html, body { height: 100%; margin: 0; }
-body { background: var(--bg); color: var(--fg); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+body { background: var(--bg); color: var(--fg); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
 a { color: var(--fg); text-decoration: none; }
 a:hover { opacity: 0.9; }
 .root, #root { max-width: 1100px; margin: 0 auto; width: 100%; }
