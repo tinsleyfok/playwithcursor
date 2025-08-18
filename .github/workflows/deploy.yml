@@ -1,8 +1,7 @@
-name: Deploy React app to GitHub Pages
+name: Deploy React app to GitHub Pages (artifact method) - disabled
 
 on:
-  push:
-    branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: read
