@@ -22,6 +22,14 @@
     .login:hover { background: var(--panel); }
     .menu-toggle { display: none; background: transparent; border: 1px solid var(--border); color: var(--fg); border-radius: 8px; padding: 8px 10px; }
     #navMenu { display: none; }
+    /* Hero */
+    .hero { padding: 80px 0 100px; text-align: center; }
+    .hero h1 { font-size: 44px; line-height: 1.1; margin: 0 0 14px; }
+    .hero p { color: var(--muted); font-size: 18px; margin: 0 0 24px; }
+    .hero .cta { display: inline-flex; align-items: center; gap: 12px; }
+    .btn { padding: 10px 16px; border-radius: 10px; border: 1px solid var(--border); }
+    .btn.primary { background: #2563eb; border-color: #2563eb; color: #fff; }
+    .btn.primary:hover { opacity: 0.95; }
     /* Mobile */
     @media (max-width: 768px) {
       .menu-toggle { display: inline-flex; }
@@ -62,7 +70,17 @@
       </div>
     </nav>
   </header>
-  <main></main>
+  <main>
+    <section class="container hero" aria-label="Hero">
+      <h1>Build with Aha! and ship faster</h1>
+      <p>A minimal, fast, and modern starter you can deploy anywhere.</p>
+      <div class="cta">
+        <a class="btn primary" href="features.html">Explore features</a>
+        <a class="btn" href="pricing.html">View pricing</a>
+        <a class="btn" href="doc.html">Read docs</a>
+      </div>
+    </section>
+  </main>
   <script>
     (function() {
       var toggle = document.getElementById("menuToggle");
