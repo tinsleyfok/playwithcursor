@@ -17,9 +17,7 @@
     .navbar { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; }
     .brand { font-family: "Baloo 2", system-ui, -apple-system, Segoe UI, Roboto, sans-serif; font-weight: 800; font-size: 28px; letter-spacing: 0.3px; }
     .nav-center { display: flex; align-items: center; gap: 28px; }
-    .nav-right { display: flex; align-items: center; gap: 14px; }
-    .login { padding: 8px 14px; border: 1px solid var(--border); border-radius: 8px; color: var(--fg); background: transparent; }
-    .login:hover { background: var(--panel); }
+    
     .menu-toggle { display: none; background: transparent; border: 1px solid var(--border); color: var(--fg); border-radius: 8px; padding: 8px 10px; }
     #navMenu { display: none; }
     /* Hero */
@@ -33,11 +31,11 @@
     /* Mobile */
     @media (max-width: 768px) {
       .menu-toggle { display: inline-flex; }
-      .nav-center, .nav-right { display: none; }
+      .nav-center { display: none; }
       #navMenu { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--panel); border-top: 1px solid var(--border); }
       #navMenu.open { display: block; }
       #navMenu .mobile-group { display: flex; flex-direction: column; gap: 12px; padding: 14px 20px; }
-      #navMenu .mobile-bottom { border-top: 1px solid var(--border); padding: 14px 20px; }
+      
     }
   </style>
 </head>
