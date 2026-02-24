@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Onboarding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="onboarding.css">
   <link rel="stylesheet" href="phone-container.css">
-  <link rel="stylesheet" href="ball.css">
 </head>
 <body>
   <div class="theme-switcher">
@@ -22,43 +24,24 @@
   <div class="phone">
     <img src="Image/Phone.png" alt="Phone" class="phone-image">
     <div class="phone-container" id="phoneContainer">
-      <div class="bubble-grid">
-        <div class="ball" data-ball="0">
-          <div class="ball-emoji">💼</div>
-          <div class="ball-text">Career &<br>Growth</div>
-        </div>
-        <div class="ball" data-ball="1">
-          <div class="ball-emoji">🐶</div>
-          <div class="ball-text">Pets &<br>Animals</div>
-        </div>
-        <div class="ball" data-ball="2">
-          <div class="ball-emoji">🏠</div>
-          <div class="ball-text">Home &<br>Living</div>
-        </div>
-        <div class="ball" data-ball="3">
-          <div class="ball-emoji">🧘</div>
-          <div class="ball-text">Health &<br>Wellness</div>
-        </div>
-        <div class="ball" data-ball="4">
-          <div class="ball-emoji">🍽️</div>
-          <div class="ball-text">Food &<br>Drink</div>
-        </div>
-        <div class="ball" data-ball="5">
-          <div class="ball-emoji">🎨</div>
-          <div class="ball-text">Culture &<br>Arts</div>
-        </div>
-        <div class="ball" data-ball="6">
-          <div class="ball-emoji">❤️</div>
-          <div class="ball-text">Relationships &<br>Family</div>
-        </div>
-        <div class="ball" data-ball="7">
-          <div class="ball-emoji">💰</div>
-          <div class="ball-text">Wealth &<br>Finance</div>
-        </div>
+      <header class="onboarding-header">
+        <span class="header-skip">Skip</span>
+      </header>
+      <h1 class="onboarding-title">Choose your interests</h1>
+      <div class="bubble-container" id="bubbleContainer">
+        <div class="bubble" data-bubble><span class="bubble-content"><span class="bubble-emoji">💼</span><span class="bubble-text">Career &<br>Growth</span></span></div>
+        <div class="bubble" data-bubble><span class="bubble-content"><span class="bubble-emoji">🐶</span><span class="bubble-text">Pets &<br>Animals</span></span></div>
+        <div class="bubble" data-bubble><span class="bubble-content"><span class="bubble-emoji">🏠</span><span class="bubble-text">Home &<br>Living</span></span></div>
+        <div class="bubble" data-bubble><span class="bubble-content"><span class="bubble-emoji">🧘</span><span class="bubble-text">Health &<br>Wellness</span></span></div>
+        <div class="bubble" data-bubble><span class="bubble-content"><span class="bubble-emoji">🍽</span><span class="bubble-text">Food &<br>Drink</span></span></div>
+        <div class="bubble" data-bubble><span class="bubble-content"><span class="bubble-emoji">🎨</span><span class="bubble-text">Culture &<br>Arts</span></span></div>
+        <div class="bubble" data-bubble><span class="bubble-content"><span class="bubble-emoji">❤️</span><span class="bubble-text">Relationships &<br>Family</span></span></div>
+        <div class="bubble" data-bubble><span class="bubble-content"><span class="bubble-emoji">💰</span><span class="bubble-text">Wealth &<br>Finance</span></span></div>
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/matter-js@0.20.0/build/matter.min.js"></script>
   <script src="theme-toggle.js"></script>
-  <script src="ball-grid.js"></script>
+  <script src="bubbles.js"></script>
 </body>
 </html>

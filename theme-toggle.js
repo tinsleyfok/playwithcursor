@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Apply initial theme
   function setTheme(theme) {
+    phoneContainer.setAttribute('data-theme', theme);
     if (theme === 'dark') {
       phoneContainer.style.background = '#000';
       darkOption.classList.add('active');

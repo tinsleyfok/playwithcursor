@@ -61,12 +61,16 @@ body {
 .phone {
   position: relative;
   display: inline-block;
+  max-width: 90vw;
+  max-height: 90vh;
 }
 
 .phone-image {
   display: block;
-  width: auto;
+  width: 100%;
   height: auto;
+  max-height: 90vh;
   position: relative;
   z-index: 2;
+  pointer-events: none; /* let clicks pass through to screen (bubbles) */
 }
