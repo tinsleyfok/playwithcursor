@@ -1,11 +1,7 @@
-body {
-  position: relative;
-  justify-content: flex-start;
-}
 
 .file-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
 }
 
@@ -14,7 +10,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin: 36px;
   width: fit-content;
   text-decoration: none;
   color: inherit;

@@ -5,7 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Onboarding</title>
   <link rel="stylesheet" href="onboarding.css">
+  <link rel="stylesheet" href="phone-container.css">
+  <link rel="stylesheet" href="ball.css">
 </head>
 <body>
+  <div class="theme-switcher">
+    <button class="theme-option" id="lightOption" data-theme="light">
+      <span class="theme-icon">☀️</span>
+      <span class="theme-label">Light</span>
+    </button>
+    <button class="theme-option" id="darkOption" data-theme="dark">
+      <span class="theme-icon">🌙</span>
+      <span class="theme-label">Dark</span>
+    </button>
+  </div>
+  <div class="phone">
+    <img src="Image/Phone.png" alt="Phone" class="phone-image">
+    <div class="phone-container" id="phoneContainer">
+      <div class="bubble-grid">
+        <div class="ball" data-ball="0">
+          <div class="ball-emoji">💼</div>
+          <div class="ball-text">Career &<br>Growth</div>
+        </div>
+        <div class="ball" data-ball="1">
+          <div class="ball-emoji">🐶</div>
+          <div class="ball-text">Pets &<br>Animals</div>
+        </div>
+        <div class="ball" data-ball="2">
+          <div class="ball-emoji">🏠</div>
+          <div class="ball-text">Home &<br>Living</div>
+        </div>
+        <div class="ball" data-ball="3">
+          <div class="ball-emoji">🧘</div>
+          <div class="ball-text">Health &<br>Wellness</div>
+        </div>
+        <div class="ball" data-ball="4">
+          <div class="ball-emoji">🍽️</div>
+          <div class="ball-text">Food &<br>Drink</div>
+        </div>
+        <div class="ball" data-ball="5">
+          <div class="ball-emoji">🎨</div>
+          <div class="ball-text">Culture &<br>Arts</div>
+        </div>
+        <div class="ball" data-ball="6">
+          <div class="ball-emoji">❤️</div>
+          <div class="ball-text">Relationships &<br>Family</div>
+        </div>
+        <div class="ball" data-ball="7">
+          <div class="ball-emoji">💰</div>
+          <div class="ball-text">Wealth &<br>Finance</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="theme-toggle.js"></script>
+  <script src="ball-grid.js"></script>
 </body>
 </html>
